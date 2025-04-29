@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previously owned Vehicles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pov.html">My Vehicles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pyf.html">Pick your fav</a>
+                  </li>
+                </ul>                
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container-fluid bg-dark text-white text-center py-5">
+          <h1 id="title">Welcome to the vehicles I've owned Page</h1>
+          <button onclick="changeText()">Click Me</button>
+          
+        </div>
+        <section class="events py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/1st.jpg" class="card-img-top" alt="1984 Lincoln Mark VII">
+                    <div class="card-body">
+                      <h5 class="card-title">1984 Lincoln Mark VII</h5>
+                      <p class="card-text">This was the first car I ever bought with my own money. Cool car built on the foxbody frame. 5.0 iter V8. It came with airbags which I replaced with traditional coil springs.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/1st.jpg', '1984 Lincoln Mark VII')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card vehicle-card" style="width: 18rem;">
+                      <img src="pics/1100.jpg" class="card-img-top" alt="1998 Suzuki GSXR 1100">
+                      <div class="card-body">
+                        <h5 class="card-title">1998 Suzuki Gsxr 1100</h5>
+                        <p class="card-text">Fun bike. These were know to have rear shocks wear out prematurely because of the power and the weight. </p>
+                        <button class="btn btn-primary" onclick="storeCardInfo('pics/1100.jpg', '1998 Suzuki Gsxr 1100')">Select this as your fav</button>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/accord.jpg" class="card-img-top" alt="1989 Honda Accord">
+                    <div class="card-body">
+                      <h5 class="card-title">1989 Honda Accord</h5>
+                      <p class="card-text">Bought this from an employee that was here on a work visa. Sold within a week. Has Pop up head lights!</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/accord.jpg', '1989 Honda Accord')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/beast.jpg" class="card-img-top" alt="2007 Ford Crown Victoria PI">
+                    <div class="card-body">
+                      <h5 class="card-title">2007 Ford Crown Victoria PI</h5>
+                      <p class="card-text">This was the Police Interceptor. Some guy was selling it as it was the last thinghehad so he could go to CO to work on a weed farm. Bought it REALLY cheap. Very reliable with cheap parts.Put 2 15's in the trunk. Drove it everywhere. Paint was rhinolined when I bought it.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/beast.jpg', '2007 Ford Crown Victoria PI')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/benz1.jpg" class="card-img-top" alt="1999 Mercedes Benz CLK 430">
+                    <div class="card-body">
+                      <h5 class="card-title">1999 Mercedes Benz CLK 430</h5>
+                      <p class="card-text">Awesome car. Small V8 coupe with leg room.Classic shape with "Bugeye" headlights. GT cars are my favorite. They are made to be highway missles.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/benz1.jpg', '1999 Mercedes Benz CLK 430')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/bluecaddy.jpg" class="card-img-top" alt="1996 Cadillac Deville">
+                    <div class="card-body">
+                      <h5 class="card-title">1996 Cadillac Deville</h5>
+                      <p class="card-text">Good seats. Roomy and front wheel drive. I would not go out seeking to buy one of these knowing that the better option is the Fleetwood.  </p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/bluecaddy.jpg', '1996 Cadillac Deville')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/bronco.jpg" class="card-img-top" alt="1996 Ford Bronco">
+                    <div class="card-body">
+                      <h5 class="card-title">1996 Ford Bronco</h5>
+                      <p class="card-text">This Had the 351w which came with the dual front shocks. I did have two sets of tires. The ones you see here and a set of 33 inch A/T tires. Loved cruising with the top off.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/bronco.jpg', '1996 Ford Bronco')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/buburu.jpg" class="card-img-top" alt="1992 Subaru Loyale">
+                    <div class="card-body">
+                      <h5 class="card-title">1992 Subaru Loyale</h5>
+                      <p class="card-text">This was a coo little 5 speed car with a boxer motor. Mint interior. Spare tire is actually under the hood above the motor. Got around 25city/32highway mpg. </p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/buburu.jpg', '1992 Subaru Loyale')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/c10blazer.jpg" class="card-img-top" alt="1978 Chevrolet Blazer">
+                    <div class="card-body">
+                      <h5 class="card-title">1978 Chevrolet Blazer</h5>
+                      <p class="card-text">Cool 2wd Blazer. Mine had been motor swapped when I bought it with a 289ci with a camm in it. had plenty of rust. sold motor and trans. Eventually sold the blazer.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/c10blazer.jpg', '1978 Chevrolet Blazer')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/c102.jpg" class="card-img-top" alt="1978 Chevrolet C10">
+                    <div class="card-body">
+                      <h5 class="card-title">1978 Chevrolet C10</h5>
+                      <p class="card-text">Long bed. had to flip the rear end because drive was actually reverse. Cool truck. Needed to be c-notched.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/c102.jpg', '1978 Chevrolet C10')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/carlo.jpg" class="card-img-top" alt="2006 Chevrolet Monte Carlo">
+                    <div class="card-body">
+                      <h5 class="card-title">2006 Chevrolet Monte Carlo</h5>
+                      <p class="card-text">Bought these to flip. Needed tires and brakes which I replaced. Sold to the sameperson that bought the Zr2 blazer.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/c102.jpg', '1978 Chevrolet C10')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/cateye.jpg" class="card-img-top" alt="2003 Chevrolet Silverado">
+                    <div class="card-body">
+                      <h5 class="card-title">2003 Chevrolet Silverado</h5>
+                      <p class="card-text">Got this on a trade for some wheels that I had. Had a small fire nd was leaking oil with low oil presure. Replaced the oil pump and timing chain. Was still leaking about a quart of oil every 50 miles. Traded it for  my Chevy Van.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/cateye.jpg', '2003 Chevrolet Silverado')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/cb.jpg" class="card-img-top" alt="1987 Honda CB450">
+                    <div class="card-body">
+                      <h5 class="card-title">1987 Honda CB450</h5>
+                      <p class="card-text">Fun reliable bike that you can pin the throttle on and get a thrill without going very fast. Not enough power for 2 up adults that are 200+</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/cb.jpg', '1987 Honda CB450')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/cervix.jpg" class="card-img-top" alt="1987 Honda CRX">
+                    <div class="card-body">
+                      <h5 class="card-title">1987 Honda CRX</h5>
+                      <p class="card-text">This was nicknamed "CeRviX" beecause it has the letters CRX in the name and also because its small. Fun grocery getter with a 5 speed.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/cervix.jpg', '1987 Honda CRX')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/chp.jpg" class="card-img-top" alt="1991 Kawasaki KZ1000p">
+                    <div class="card-body">
+                      <h5 class="card-title">1991 Kawasaki KZ1000p</h5>
+                      <p class="card-text">This was a project bike that I never got around to. Was a retired State police bike. With a desireable motor.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/chp.jpg', '1991 Kawasaki KZ1000p')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>                
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/cutlass.jpg" class="card-img-top" alt="1995 Oldsmobile Cutlass">
+                    <div class="card-body">
+                      <h5 class="card-title">1995 Oldsmobile Cutlass</h5>
+                      <p class="card-text">This was a car that I traded for a xbox360. It got me around town for the winter and to KC and back. Not a pic of MY actual car</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/cutlass.jpg', '1995 Oldsmobile Cutlass')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>                
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/eclipse.jpg" class="card-img-top" alt="2000 Mitsubishi Ecplise">
+                    <div class="card-body">
+                      <h5 class="card-title">2000 Mitsubishi Ecplise</h5>
+                      <p class="card-text">Traded a minivan for this. v6 manual 5 speed. I took this and raced it in an autocross event.  </p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/eclipse.jpg', '2000 Mitsubishi Ecplise')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/el runza.jpg" class="card-img-top" alt="1999 Hyundai Elantra">
+                    <div class="card-body">
+                      <h5 class="card-title">1999 Hyundai Elantra</h5>
+                      <p class="card-text">AKA "Bently Poo Poo" Bought this as a gas saver. A/C and Heat worked. Drove to KC and back with a 50cc dirtbike in the backseat. </p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/el runza.jpg', '1999 Hyundai Elantra')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/explorer.jpg" class="card-img-top" alt="1997 Ford Explorer">
+                    <div class="card-body">
+                      <h5 class="card-title">1997 Ford Explorer</h5>
+                      <p class="card-text">This was the vehicle that my parents bought me while I was in highschool. Kept it for nearly 10 years. Thanks Mom and Dad</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/explorer.jpg', '1997 Ford Explorer')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/fleetwood.jpg" class="card-img-top" alt="1996 Cadillac Fleetwood">
+                    <div class="card-body">
+                      <h5 class="card-title">1996 Cadillac Fleetwood</h5>
+                      <p class="card-text">This is the only pic I coud find of it. Replaced fuel pump which meant I had to drop the tank. It actuallly happend right were that picture was taken. Which is why I made myself a celebratory drink soon after. Good car I would own another one.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/fleetwood.jpg', '1996 Cadillac Fleetwood')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/fsd.jpg" class="card-img-top" alt="1996 Ford Superduty">
+                    <div class="card-body">
+                      <h5 class="card-title">1996 Ford Superduty</h5>
+                      <p class="card-text">I was gonna start a business with this one, but could never get it to run right. My first diesel truck. Spent plenty of money upgrading the turbo,addidng a turbo back exhaust and upgrading the pcm.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/fsd.jpg', '1996 Ford Superduty')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/fzr.jpg" class="card-img-top" alt="2007 Yamaha FZ1">
+                    <div class="card-body">
+                      <h5 class="card-title">2007 Yamaha FZ1</h5>
+                      <p class="card-text">The first bike that I bought that I got to ride. I thought it was a good idea to by one that was already laid down so i woudnt feel so bad if I ever dropped it. I even rode in the snow and to get groceries. Put alot of miles on this bike in one year.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/fzr.jpg', '2007 Yamaha FZ1')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/gsxr600.jpg" class="card-img-top" alt="2007 gsxr 600">
+                    <div class="card-body">
+                      <h5 class="card-title">2007 gsxr 600</h5>
+                      <p class="card-text">Great fun lightweight flickable bike. Easy to work on as well. Sold to a friend.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/gsxr600.jpg', '2007 gsxr 600')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/gt1.jpg" class="card-img-top" alt="1998 Mustang GT">
+                    <div class="card-body">
+                      <h5 class="card-title">1998 Mustang GT</h5>
+                      <p class="card-text">Cant go wrong with a convertible v8 with a 5 speed and dual exhaust.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/gt1.jpg', '1998 Mustang GT')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/gta.jpg" class="card-img-top" alt="1986 Pontiac GTA">
+                    <div class="card-body">
+                      <h5 class="card-title">1986 Pontiac GTA</h5>
+                      <p class="card-text">Saw this while pouring concrete in an alley by my house. Bought it.Took it home and it sat for the winter. Traded it for a Kia Sedona</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/gta.jpg', '1986 Pontiac GTA')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/gws.jpg" class="card-img-top" alt="1988 Cadillac Fleetwood">
+                    <div class="card-body">
+                      <h5 class="card-title">1988 Cadillac Fleetwood</h5>
+                      <p class="card-text">AKA Great White. Do those wheels look familiar? Beautiful riding and looking vehicle. Also had 2 15's the the trunk.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/gws.jpg', '1988 Cadillac Fleetwood')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/jeffs ford.jpg" class="card-img-top" alt="1992 Ford F150">
+                    <div class="card-body">
+                      <h5 class="card-title">1992 Ford F150</h5>
+                      <p class="card-text">Bought this truck from the same person that had the old parks and rec truck. Needed a clutch. Dont remember what happened to it.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/jeffs ford.jpg', '1992 Ford F150')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/jens bike.jpg" class="card-img-top" alt="Suzuki Maruder 1600">
+                    <div class="card-body">
+                      <h5 class="card-title">Suzuki Maruder 1600</h5>
+                      <p class="card-text">Traded AJeep for this. Taught my wife how to ride on it. Fun bike. Had a CD player with speakers in the cowl.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/jens bike.jpg', 'Suzuki Maruder 1600')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/jgc.jpg" class="card-img-top" alt="1998 Jeep Grand Cherokee">
+                    <div class="card-body">
+                      <h5 class="card-title">1998 Jeep Grand Cherokee</h5>
+                      <p class="card-text">I remember this needed a driveshaft. Fixed that drove it for alittle while then traded it for a motorcycle to teach my wife how to ride.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/jgc.jpg', '1998 Jeep Grand Cherokee')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/jsbenz.jpg" class="card-img-top" alt="2002 Mercedes C240">
+                    <div class="card-body">
+                      <h5 class="card-title">2002 Mercedes C240</h5>
+                      <p class="card-text">This car needed struts when I bought it. Also came with extra heels that did not fit. Sold the wheels fixed the struts sold it to a friend that had it for nearly 5 years till lightning struck it.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/jsbenz.jpg', '2002 Mercedes C240')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/lexi3.jpg" class="card-img-top" alt="2003 Lexus LS430">
+                    <div class="card-body">
+                      <h5 class="card-title">2003 Lexus LS430</h5>
+                      <p class="card-text">Great all around car. Plenty of legroom and creature comforts. Does allot of things well. Reliable v8 sedan.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/lexi3.jpg', '2003 Lexus LS430')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/monte.jpg" class="card-img-top" alt="1979 Monte Carlo">
+                    <div class="card-body">
+                      <h5 class="card-title">1979 Monte Carlo</h5>
+                      <p class="card-text">This car was rear ended. Had the 4.3L v6. I didnt want to put too much money into this car.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/monte.jpg', '1979 Monte Carlo')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/nancy.jpg" class="card-img-top" alt="2007 Mitsubishi Ecplise">
+                    <div class="card-body">
+                      <h5 class="card-title">2007 Mitsubishi Ecplise</h5>
+                      <p class="card-text">AKA "Nancy" after Nancy Reagan because I found a bag of drugs in the car. This car was my first car that I bought to flip when we moved to Tx. Also my first auction car. It was bought on my birthday.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/nancy.jpg', '2007 Mitsubishi Ecplise')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/noahsvan.jpg" class="card-img-top" alt="2003 Chrysler Town & Country">
+                    <div class="card-body">
+                      <h5 class="card-title">2003 Chrysler Town & Country</h5>
+                      <p class="card-text">I bought this from a friend of mine. Gave it a detail. Drove it for a few days and traded it for the maroon ecplise.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/noahsvan.jpg', '2003 Chrysler Town & Country')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/obs.jpg" class="card-img-top" alt="1998 Chevrolet Silverado">
+                    <div class="card-body">
+                      <h5 class="card-title">1998 Chevrolet Silverado</h5>
+                      <p class="card-text">Not a picture of MYactual truck. Mine was black and I put My Daytons on it. No AC!</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/obs.jpg', '1998 Chevrolet Silverado')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/pb1.jpg" class="card-img-top" alt="2013 Kawasaki ZX-14R">
+                    <div class="card-body">
+                      <h5 class="card-title">2013 Kawasaki ZX-14R</h5>
+                      <p class="card-text">I nicknamed this "Patrick Bateman" because it is crazy! I want to go 200mph on this at a sactioned event</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/pb1.jpg', '2013 Kawasaki ZX-14R')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/ram.jpg" class="card-img-top" alt="2003 Dodge Ram 1500">
+                    <div class="card-body">
+                      <h5 class="card-title">2003 Dodge Ram 1500</h5>
+                      <p class="card-text">This truck I inherited from my father when he passed. This is something that I'll never sell. Im slowly making it my own with mods and upkeep.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/ram.jpg', '2003 Dodge Ram 1500')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/saab900.jpg" class="card-img-top" alt="1997 Saab 900 turbo">
+                    <div class="card-body">
+                      <h5 class="card-title">1997 Saab 900 turbo</h5>
+                      <p class="card-text">Interesting car. The instrument cluster is derived from aircraft. The ignition switch was positoned in the middle console. The hood hinges from the front. I was getting into boost going up a hill one time and it did not like that. It was scrapped. </p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/saab900.jpg', '1997 Saab 900 turbo')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/sb.JPG" class="card-img-top" alt="2001 Chevy Express EXT">
+                    <div class="card-body">
+                      <h5 class="card-title">2001 Chevy Express EXT</h5>
+                      <p class="card-text">This is the Shibari Bus. I bought this because my wife didnt like dog hair getting in her car. I installed two 12 inch subs. It also still has enough room to haul a motorcycle with seatbelts for 5 people.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/sb.JPG', '2001 Chevy Express EXT')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/sedona.jpg" class="card-img-top" alt="2007 Kia Sedona LX">
+                    <div class="card-body">
+                      <h5 class="card-title">2007 Kia Sedona LX</h5>
+                      <p class="card-text">I traded my white GTA for this. It felt wierd riding in a minivan without actually having any kids. Its a minivan! It has enough cupholders for every passenger to double fist and be able to set both drinks down. You can also fit a whole sheet of drywall inside. </p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/sedona.jpg', '2007 Kia Sedona LX')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/sl500.jpg" class="card-img-top" alt="1996 Mercedes Benz SL 500">
+                    <div class="card-body">
+                      <h5 class="card-title">1996 Mercedes Benz SL 500</h5>
+                      <p class="card-text">I actually traded "Lexi" for this on the 4th of July. Got pulled over for not having a license plate on my way back home. Police Officer gave me a written warning thay I still kept to this day. Very Status car of the early 90's-2000's. Has been seen in lots of movies and musicvideos. Lots of famous people have owned them including Princess Diana.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/sl500.jpg', '1996 Mercedes Benz SL 500')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/suburb.jpg" class="card-img-top" alt="2003 Chevrolet Suburban">
+                    <div class="card-body">
+                      <h5 class="card-title">2003 Chevrolet Suburban</h5>
+                      <p class="card-text">Bought this with a bad transmission. Replaced it with a rebuilt transmission that I found out was bad. Junked it</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/suburb.jpg', '2003 Chevrolet Suburban')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/vandura.jpg" class="card-img-top" alt="1996 GMC Vandura">
+                    <div class="card-body">
+                      <h5 class="card-title">1996 GMC Vandura</h5>
+                      <p class="card-text">I bought this from my roommate at the time. Went camping in it because the back seat folded into a bed.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/vandura.jpg', '1996 GMC Vandura')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/whitey.jpg" class="card-img-top" alt="1978 Chevrolet C10">
+                    <div class="card-body">
+                      <h5 class="card-title">1978 Chevrolet C10</h5>
+                      <p class="card-text">This was an old parks and recs truck. Registered in the city for years. I left it as is and just put the rims on it.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/whitey.jpg', '1978 Chevrolet C10')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/yzf.jpg" class="card-img-top" alt="1998 YZF-600R">
+                    <div class="card-body">
+                      <h5 class="card-title">1998 YZF-600R</h5>
+                      <p class="card-text">I only remember selling this bike to the son of a woman I was seeing at the time.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/yzf.jpg', '1998 YZF-600R')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4"> 
+                  <div class="card vehicle-card" style="width: 18rem;">
+                    <img src="pics/zr2.jpg" class="card-img-top" alt="1999 S10 Blazer">
+                    <div class="card-body">
+                      <h5 class="card-title">1999 S10 Blazer ZR2</h5>
+                      <p class="card-text">Cool little vehicle. Ended up selling to someone I knew.</p>
+                      <button class="btn btn-primary" onclick="storeCardInfo('pics/zr2.jpg', '1999 S10 Blazer ZR2')">Select this as your fav</button>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 POV Page</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+  
+</body>
+</html>
